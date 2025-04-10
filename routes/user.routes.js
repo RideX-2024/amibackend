@@ -5,11 +5,11 @@ const bcrypt = require('bcryptjs');
 const nodemailer = require('nodemailer');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user.model'); // Adjust the path according to your project structure
-const { Stripe } = require("stripe");
+//const { Stripe } = require("stripe");
 const router = express.Router();
 
-const stripeKey = process.env.STRIPE_SECRET_KEY;
-const stripe = new Stripe(stripeKey);
+//const stripeKey = process.env.STRIPE_SECRET_KEY;
+//const stripe = new Stripe(stripeKey);
 
 const transporter = nodemailer.createTransport({
     service : "gmail",
